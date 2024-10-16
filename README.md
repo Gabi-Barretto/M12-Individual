@@ -1,2 +1,2 @@
 # M12-Individual
-Inteli - M12
+M12 - Inteli
