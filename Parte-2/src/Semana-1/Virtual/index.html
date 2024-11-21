@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sala 360</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Assets utilizados no projeto -->
+      <a-assets>
+        <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <img id="img" src="./fotos/nossa.jpg" />
+      </a-assets>
+      
+      <!-- Camera + Cursor. -->
+      <a-camera position="0 1 0" id="cameraCena">
+        <a-cursor intersection-spawn="Event: click; mixin:voxel;">
+        </a-cursor>
+      </a-camera>
+
+      <!-- Céu com imagem 360 -->
+      <a-sky id="img-360" radius="30" src="#img"> </a-sky>
+
+      <!-- Textos em posições variadas -->
+      <a-text value="ARVORE" position="-6.5 2 -10" color="#ffff00" rotation="0 20 0"></a-text>
+      <a-text value="CARRO" position="5.5 -0.5 -8" color="#00ff00" rotation="0 -30 0"></a-text>
+      <a-text value="INTELI" position="9 4 3" color="#0000ff" rotation="0 -100 0"></a-text>
+      <a-text value="GABI" position="-0.6 1.5 7" color="#ff00ff" rotation="0 180 0"></a-text>
+      <a-text value="STEFANO" position="2.5 2 7" color="#ff0000" rotation="0 180 0"></a-text>
+    </a-scene>
+  </body>
+  <!-- Cria o script para lidar com a transição -->
+  <script>
+    document.querySelector("#vai_para_cima")
+      .addEventListener("mouseenter", e => {
+        location.href = "segunda_tela.html";
+      });
+  </script>
+</html>
