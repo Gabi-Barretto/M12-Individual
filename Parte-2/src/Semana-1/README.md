@@ -1,4 +1,4 @@
-### Documentação do Projeto de Realidade Virtual e Aumentada
+# Documentação do Projeto de Realidade Virtual e Aumentada
 
 Este projeto utiliza tecnologias de Realidade Virtual (VR) e Realidade Aumentada (AR) para criar experiências interativas. Ele combina as funcionalidades da biblioteca A-Frame para renderização de cenas 3D e AR.js para integração de realidade aumentada baseada em marcadores.
 
