@@ -47,3 +47,6 @@ A aparência e o comportamento do Prof. André foram projetados para maximizar o
 
 --- 
 
+### **Parte 2: Criação no MetaHuman Creator**  
+
+[Link para o Modelo]()
