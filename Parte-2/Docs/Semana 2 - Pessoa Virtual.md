@@ -49,4 +49,4 @@ A aparência e o comportamento do Prof. André foram projetados para maximizar o
 
 ### **Parte 2: Criação no MetaHuman Creator**  
 
-[Link para o Modelo]()
+[Link para o arquivo MetaHuman](https://github.com/Gabi-Barretto/M12-Individual/tree/master/Parte-2/src/Semana-2/src/model)
