@@ -50,3 +50,35 @@ A aparência e o comportamento do Prof. André foram projetados para maximizar o
 ### **Parte 2: Criação no MetaHuman Creator**  
 
 [Link para o arquivo MetaHuman](https://github.com/Gabi-Barretto/M12-Individual/tree/master/Parte-2/src/Semana-2/src/model)
+
+---
+
+### **Parte 3: Idealizando a Animação**
+
+#### **Roteiro Utilizado**
+O texto foi criado com o objetivo de apresentar as cinco regiões do Brasil de forma didática e engajante. O Professor André conduz a aula de maneira amigável e educativa:
+
+---
+
+**Texto Utilizado**  
+*Olá, eu sou o Professor André, e hoje vamos aprender algo muito importante sobre o nosso país, as cinco regiões do Brasil ... Vamos explorar juntos as diferenças e características de cada uma delas! ... Você sabia que o Brasil é dividido em cinco grandes regiões? ... Cada uma tem suas características próprias, como cultura, clima e economia. ... O Norte é a maior região, famosa por abrigar a Floresta Amazônica, o maior bioma do mundo! ... O Nordeste tem praias incríveis, é muito rico em cultura e história, e é o maior produtor de frutas tropicais do país. ... No Centro-Oeste, encontramos o Pantanal, a maior área alagada do planeta, e a capital do Brasil, Brasília! ... O Sudeste é a região mais populosa e industrializada do Brasil, com grandes cidades como São Paulo e Rio de Janeiro. ... E no Sul, temos um clima mais frio e paisagens lindas, como as serras gaúchas e catarinenses. ... E aí, gostaram dessa viagem pelo Brasil? ... Agora vocês já sabem um pouco mais sobre as nossas regiões e suas riquezas. ... Até a próxima aula!*
+
+---
+
+#### **Ferramenta Utilizada**
+- **SpeechGen**: Gerador de texto para fala, acessível em [speechgen.io](https://speechgen.io/pt/).
+- Configuração: 
+  - **Voz Masculina** com tom amigável e didático.
+  - Pausas indicadas no texto com "..." para fluidez na narração.
+
+---
+
+#### **Processo**
+1. **Inserção do Texto**: O texto foi carregado na interface da ferramenta **SpeechGen**.
+2. **Ajustes de Voz**: Selecionada uma voz que melhor representasse o Professor André, com entonação calma e didática.
+3. **Exportação do Áudio**: Gerado em formato `.mp3` e segmentado por trechos.
+
+---
+
+#### **Resultado**
+O áudio gerado foi claro, com pausas estratégicas, e compatível com a sincronização no MetaHuman no Unreal Engine. As animações labiais e gestuais foram configuradas para acompanhar o roteiro.
