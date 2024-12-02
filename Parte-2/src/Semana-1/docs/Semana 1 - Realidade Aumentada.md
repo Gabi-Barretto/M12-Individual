@@ -2,7 +2,7 @@
 
 Diante das opções, vamos de MAXST, única que roda no MAC.
 
-![alt text](../Mídia/Aula1.png)
+![alt text](../midia/Aula1.png)
 
 ## **1. Introdução à Realidade Ampliada (RA)**
 

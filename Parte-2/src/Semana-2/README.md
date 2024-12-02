@@ -1,51 +1,73 @@
-# **Criação de Humanos Virtuais em RV**
+# **Criação de Humanos Virtuais em Realidade Virtual (RV)**
 
-[Link para docs + detalhada](https://github.com/Gabi-Barretto/M12-Individual/blob/master/Parte-2/Docs/Semana%202%20-%20Pessoa%20Virtual.md)
-
-## **Objetivo**
-Desenvolver um humano digital interativo para aplicações educacionais em realidade virtual. O projeto inclui:
-
-- Personalização do humano digital.
-- Integração de áudio, texto e animações.
-- Deploy funcional em dispositivos Meta Quest.
+## **Visão Geral**
+Este projeto tem como objetivo criar um humano digital interativo para aplicações educacionais em realidade virtual, com foco na personalização visual, animação sincronizada e funcionalidade em dispositivos Meta Quest. Ao final, o humano digital, denominado **Prof. André**, atuará como um professor interativo, educando alunos em uma experiência imersiva sobre geografia.
 
 ---
 
-## **Diretórios do Projeto**
-### Estrutura Principal:
-- **`Bark`**:
-  - **`audios`**: Contém os áudios gerados para o humano virtual.
-  - **`scripts`**: Arquivos de código para a configuração de animações e sincronização.
-  - **`texts`**: Textos utilizados para a narração.
-  - **`texts-all`**: Versões integradas de textos narrativos.
-
-- **`MetaHuman`**:
-  - **`Andre.mhb`**: Arquivo do humano digital criado no MetaHuman Creator.
-
-- **`Mídia`**:
-  - **`audio.mp3`**: Áudio final utilizado no projeto.
+## **Objetivos do Projeto**
+- Desenvolver um **humano digital** com aparência personalizada e justificativa de design.
+- Criar animações sincronizadas com narrações interativas e didáticas.
+- Realizar o deploy do humano digital para **Meta Quest** e testar a funcionalidade completa.
+- Apresentar um cenário educacional virtual inovador para alunos em locais remotos.
 
 ---
 
-## **Processo de Implementação**
+## **Estrutura do Projeto**
+A organização do projeto foi feita de forma modular, abrangendo os seguintes diretórios principais:
 
-### **1. Criação no MetaHuman Creator**
-- Personalização visual do humano virtual, **Prof. André**, incluindo aparência e vestuário que refletem um educador acessível e profissional.
-- **Arquivo gerado:** `Andre.mhb`.
-
-### **2. Desenvolvimento da Narração**
-- Ferramenta: **SpeechGen** ([speechgen.io](https://speechgen.io/pt/)).
-  - **Configurações**:
-    - Voz masculina didática e amigável.
-    - Texto narrativo segmentado para fluidez.
-  - **Áudio exportado:** `audio.mp3`.
-
-### **3. Integração no Unreal Engine**
-- Sincronização do áudio gerado (`audio.mp3`) com as animações faciais e gestuais do humano digital no Unreal Engine.
-- Testes de funcionalidade no Meta Quest.
+### **Diretórios e Arquivos**
+- **`MetaHuman`**: Contém o humano digital criado no MetaHuman Creator.
+  - `Andre.mhb`: Arquivo de personalização do humano digital.
+- **`Midia`**: Armazena imagens e recursos visuais.
+  - `image.png`, `image-1.png`: Screenshots do humano digital e cenas do projeto.
 
 ---
 
-## **Resultado**
-- O humano virtual foi configurado para atuar como educador em realidade virtual.
-- A experiência inclui texto, áudio e animações sincronizadas para criar uma aula interativa sobre as regiões do Brasil.
+## **Etapas do Desenvolvimento**
+
+### **1. Planejamento e Justificativa**
+Definição do contexto, propósito e descrição detalhada do humano virtual, incluindo aspectos técnicos e pedagógicos. O humano digital, **Prof. André**, foi projetado para atuar como educador interativo em geografia.
+
+### **2. Criação no MetaHuman Creator**
+- Personalização visual do Prof. André:
+  - Aparência: **Adulto, tom de pele médio, vestuário formal, óculos.**
+  - Expressões faciais amigáveis e gestos didáticos.
+- Arquivo gerado: `Andre.mhb`.
+
+![Prof. André](./midia/image.png)
+![Prof. André em ação](./midia/image-1.png)
+
+### **3. Desenvolvimento de Áudio e Narração**
+- **Ferramenta Utilizada**: [SpeechGen](https://speechgen.io/pt/).
+- Configuração:
+  - Voz masculina, tom amigável e pausas fluentes.
+- Resultado: Áudio sincronizado para integração no Unreal Engine.
+
+### **4. Integração no Unreal Engine**
+- Importação do humano digital gerado no MetaHuman Creator.
+- Sincronização do áudio (`audio.mp3`) com as animações labiais e gestuais.
+- Configuração de cenas interativas no Unreal Engine.
+
+### **5. Teste e Deploy**
+- Teste em dispositivos Meta Quest para validação da experiência imersiva.
+- Ajustes finais para sincronização e usabilidade.
+
+---
+
+## **Ferramentas Utilizadas**
+- **MetaHuman Creator**: Personalização do humano digital.
+- **SpeechGen**: Geração de áudio narrativo.
+- **Unreal Engine**: Integração de animação e deploy.
+- **Meta Quest**: Dispositivo para teste e deploy.
+
+---
+
+## **Resultados**
+O Prof. André foi configurado com sucesso como um educador virtual interativo. Ele está apto a ensinar sobre as regiões do Brasil em um cenário imersivo, utilizando áudio narrado e animações sincronizadas para engajar os alunos.
+
+---
+
+## **Links Importantes**
+- [Documentação Completa](https://github.com/Gabi-Barretto/M12-Individual/blob/master/Parte-2/Docs/Semana%202%20-%20Pessoa%20Virtual.md)
+- [MetaHuman Creator](https://www.unrealengine.com/en-US/metahuman-creator)
