@@ -5,6 +5,12 @@ Este documento detalha as etapas e decisões tomadas na criação do humano digi
 
 ---
 
+## **Recursos Complementares**
+- [Link para README](https://github.com/Gabi-Barretto/M12-Individual/blob/master/Parte-2/Semana-2/README.md)
+- [Link para Projeto no MetaHuman](https://github.com/Gabi-Barretto/M12-Individual/tree/master/Parte-2/src/Semana-2/src/model)
+
+---
+
 ## **Parte 1: Contextualização e Justificativa**
 
 ### **Propósito do Humano Digital**
@@ -95,9 +101,3 @@ O áudio foi sincronizado com as animações labiais e gestuais no Unreal Engine
 
 ## **Conclusão**
 O humano digital **Prof. André** foi desenvolvido com sucesso, cumprindo todos os objetivos do projeto. Ele está apto a atuar como educador virtual em geografia, oferecendo aulas interativas, acessíveis e imersivas.
-
----
-
-## **Recursos Complementares**
-- [Link para README](https://github.com/Gabi-Barretto/M12-Individual/blob/master/README.md)
-- [Link para Projeto no MetaHuman](https://github.com/Gabi-Barretto/M12-Individual/tree/master/Parte-2/src/Semana-2/src/model)

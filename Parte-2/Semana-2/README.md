@@ -5,6 +5,12 @@ Este projeto tem como objetivo criar um humano digital interativo para aplicaç�
 
 ---
 
+## **Links Importantes**
+- [Documentação Completa](https://github.com/Gabi-Barretto/M12-Individual/blob/master/Parte-2/Semana-2/docs/Semana%202%20-%20Pessoa%20Virtual.md)
+- [MetaHuman Creator](https://www.unrealengine.com/en-US/metahuman-creator)
+
+---
+
 ## **Objetivos do Projeto**
 - Desenvolver um **humano digital** com aparência personalizada e justificativa de design.
 - Criar animações sincronizadas com narrações interativas e didáticas.
@@ -65,9 +71,3 @@ Definição do contexto, propósito e descrição detalhada do humano virtual, i
 
 ## **Resultados**
 O Prof. André foi configurado com sucesso como um educador virtual interativo. Ele está apto a ensinar sobre as regiões do Brasil em um cenário imersivo, utilizando áudio narrado e animações sincronizadas para engajar os alunos.
-
----
-
-## **Links Importantes**
-- [Documentação Completa](https://github.com/Gabi-Barretto/M12-Individual/blob/master/Parte-2/Docs/Semana%202%20-%20Pessoa%20Virtual.md)
-- [MetaHuman Creator](https://www.unrealengine.com/en-US/metahuman-creator)
