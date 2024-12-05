@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapeamento de Texturas no GLB</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script>
+      AFRAME.registerComponent("map-textures", {
+        init: function () {
+          const model = this.el;
+
+          // Evento disparado quando o modelo GLB é carregado
+          model.addEventListener("model-loaded", () => {
+            const object3D = model.getObject3D("mesh");
+
+            if (!object3D) {
+              console.error("Modelo GLB não encontrado ou vazio.");
+              return;
+            }
+
+            console.log("Modelo carregado. Aplicando texturas...");
+
+            // Carregar texturas
+            const textureLoader = new THREE.TextureLoader();
+            const madeiraTexture = textureLoader.load("./model/textures/MADEIRA2.jpg");
+            const gramaTexture = textureLoader.load("./model/textures/GRAMA.jpg");
+
+            // Iterar pelos objetos dentro do GLB
+            object3D.traverse((node) => {
+              if (node.name) {
+                console.log("Objeto encontrado:", node.name);
+
+                // Aplicar textura de madeira aos cubos
+                if (node.name.includes("Cube")) {
+                  node.material = node.material.clone(); // Evitar alteração global
+                  node.material.map = madeiraTexture;
+                  node.material.needsUpdate = true;
+                }
+
+                // Aplicar textura de grama ao plano
+                if (node.name.includes("Plane")) {
+                  node.material = node.material.clone(); // Evitar alteração global
+                  node.material.map = gramaTexture;
+                  node.material.needsUpdate = true;
+                }
+
+                // Aplicar textura de grama ao plano
+                if (node.name.includes("Cylinder")) {
+                    node.material = node.material.clone(); // Clonar para evitar alterações globais
+                  node.material.color.set("#0000FF"); // Azul
+                  node.material.needsUpdate = true;
+                }
+
+                // Aplicar textura de grama ao plano
+                if (node.name.includes("Plane")) {
+                  node.material = node.material.clone(); // Evitar alteração global
+                  node.material.map = gramaTexture;
+                  node.material.needsUpdate = true;
+                }
+
+              }
+            });
+          });
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Luzes -->
+      <a-light type="ambient" color="#ffffff" intensity="0.6"></a-light>
+      <a-light type="directional" position="0 5 5" intensity="1"></a-light>
+
+      <!-- Modelo GLB -->
+      <a-entity
+        id="model"
+        gltf-model="./model/SampleScene.glb"
+        map-textures
+        position="0 0 -5"
+        scale="1 1 1"
+      ></a-entity>
+
+      <!-- Posicionamento inicial do usuário -->
+      <a-camera position="0 1.6 5">
+        <a-cursor color="#FF0000"></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
