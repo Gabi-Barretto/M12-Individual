@@ -23,7 +23,7 @@
 
             // Carregar texturas
             const textureLoader = new THREE.TextureLoader();
-            const madeiraTexture = textureLoader.load("./model/textures/MADEIRA2.jpg");
+            const madeiraTexture = textureLoader.load("./model/textures/MADEIRA.jpg");
             const gramaTexture = textureLoader.load("./model/textures/GRAMA.jpg");
 
             // Iterar pelos objetos dentro do GLB
@@ -45,20 +45,32 @@
                   node.material.needsUpdate = true;
                 }
 
-                // Aplicar textura de grama ao plano
+                // Aplicar textura ao cilindro
                 if (node.name.includes("Cylinder")) {
-                    node.material = node.material.clone(); // Clonar para evitar alterações globais
+                  node.material = node.material.clone(); // Clonar para evitar alterações globais
                   node.material.color.set("#0000FF"); // Azul
                   node.material.needsUpdate = true;
                 }
 
-                // Aplicar textura de grama ao plano
-                if (node.name.includes("Plane")) {
-                  node.material = node.material.clone(); // Evitar alteração global
-                  node.material.map = gramaTexture;
-                  node.material.needsUpdate = true;
-                }
+                // Adicionar evento de clique para a galinha
+                if (node.name === "Chicken") {
+                  console.log("Galinha configurada!");
 
+                  const initialPosition = node.position.clone(); // Salvar posição inicial
+
+                  console.log(initialPosition);
+
+                  model.addEventListener("click", () => {
+                    console.log("Galinha clicada!");
+                    const newPosition = new THREE.Vector3(initialPosition.x + 3.5, initialPosition.y, initialPosition.z); // Nova posição
+                    node.position.copy(newPosition);
+
+                    // Retornar à posição inicial após 2 segundos
+                    setTimeout(() => {
+                      node.position.copy(initialPosition);
+                    }, 2000);
+                  });
+                }
               }
             });
           });
@@ -75,14 +87,14 @@
       <!-- Modelo GLB -->
       <a-entity
         id="model"
-        gltf-model="./model/SampleScene.glb"
+        gltf-model="./model/Cena.glb"
         map-textures
         position="0 0 -5"
         scale="1 1 1"
       ></a-entity>
 
       <!-- Posicionamento inicial do usuário -->
-      <a-camera position="0 1.6 5">
+      <a-camera position="0 1.6 5" cursor="rayOrigin: mouse">
         <a-cursor color="#FF0000"></a-cursor>
       </a-camera>
     </a-scene>

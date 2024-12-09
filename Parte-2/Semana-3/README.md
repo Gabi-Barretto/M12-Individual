@@ -78,6 +78,15 @@ O enredo imaginado para o celerinho envolve uma simulação onde os animais são
 ### Detalhe 2: Iluminação e Sombras  
 ![Iluminação](midia/image-2.png)
 
+### Modelo novo animado e com texturas aplicadas:
+
+- Textura aplicada.
+- Galinha se movimenta com o clique.
+
+Isso pode ser visualizado ao rodar com Live Server o **[Exemplo](https://github.com/Gabi-Barretto/M12-Individual/blob/master/Parte-2/Semana-3/src/exemplo-01.html)** como está estruturado em *src*.
+
+![GIF](midia/output.gif)
+
 ---
 
 ## 7. Conclusão
